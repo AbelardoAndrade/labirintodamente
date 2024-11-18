@@ -407,13 +407,23 @@ footer {
 }
 
 /* Contact Section */
+
+#contato p {
+  font-size: larger;
+  color: var(--light);
+}
+
 .contact-section {
   background: rgba(20,20,20,0.5);
   padding: 4rem 0;
+ 
 }
 
 .contact-grid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
@@ -422,6 +432,7 @@ footer {
   padding: 2rem;
   background: rgba(30,30,30,0.5);
   border-left: 1px solid var(--accent);
+  padding: 1rem;
 }
 
 .contact-info h3 {
@@ -432,6 +443,11 @@ footer {
 .contact-info p {
   color: #666;
   margin-bottom: 0.5rem;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* Responsive Menu */
